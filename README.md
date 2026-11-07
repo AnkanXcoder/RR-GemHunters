@@ -1,18 +1,18 @@
 # 💎 RR GemHunters
 
-\<h3 align="center">🏏 Others See Stats. We Discover Stars.\</h3>
+<h3 align="center">🏏 Others See Stats. We Discover Stars.\</h3>
 
-\<p align="center">
+<p align="center">
 &#x20; \<strong>Cricket Talent Discovery & Auction Intelligence\</strong>
-\</p>
+</p>
 
-\<p align="center">
+<p align="center">
 &#x20; \<img src="[https://img.shields.io/badge/Python-3.13-blue?logo=python](https://img.shields.io/badge/Python-3.13-blue?logo=python)" />
 &#x20; \<img src="[https://img.shields.io/badge/Pandas-Analytics-150458?logo=pandas](https://img.shields.io/badge/Pandas-Analytics-150458?logo=pandas)" />
 &#x20; \<img src="[https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn)" />
 &#x20; \<img src="[https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit)" />
 &#x20; \<img src="[https://img.shields.io/badge/Status-In%20Development-orange](https://img.shields.io/badge/Status-In%20Development-orange)" />
-\</p>
+</p>
 
 ---
 
@@ -125,7 +125,7 @@ RR-GemHunters/
 - [x] Project initialization
 - [x] Python environment setup
 - [x] Core dependencies installation
-- [ ] GitHub integration
+- [x] GitHub integration
 - [ ] Data investigation & cleaning
 - [ ] Exploratory data analysis
 - [ ] Cricket feature engineering
@@ -146,8 +146,8 @@ Official competition datasets, confidential player-level records and restricted 
 
 ---
 
-\<p align="center">
+<p align="center">
 &#x20; \<strong>💎 Every Hidden Gem Deserves a Chance to Shine.\</strong>
 &#x20; \<br/>
 &#x20; \<sub>RR GemHunters | Discovering Tomorrow's Cricket Stars\</sub>
-\</p>
+</p>
