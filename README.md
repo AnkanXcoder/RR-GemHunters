@@ -1,4 +1,4 @@
-# 💎 RR GemHunters
+# 💎 RR GemHunters 💎
 
 <p align="center">
   <h3 align="center">Others See Stats. We Discover Stars.</h3>
