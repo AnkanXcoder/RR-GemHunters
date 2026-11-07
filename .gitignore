@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# Private competition data
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Model artifacts
+models/
+*.pkl
+*.joblib
+
+# Private outputs
+private_outputs/
+
+# IDE
+.vscode/
