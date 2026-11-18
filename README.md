@@ -3,196 +3,256 @@
 <p align="center">
   <h3 align="center">Others See Stats. We Discover Stars.</h3>
   <p align="center">
-    <strong>Cricket Talent Discovery & Auction Intelligence</strong>
+    <strong>Pressure Performance Analysis & Player Selection</strong>
     <br />
-    A data-driven scouting platform designed to identify undervalued, high-potential cricket talent.
+    A data-led approach to identifying impact in high-pressure T20 cricket.
   </p>
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Project-Completed-success" />
+  <img src="https://img.shields.io/badge/Competition-SupeRR%20Selector%20Season%202-blue" />
+  <img src="https://img.shields.io/badge/Round-1-purple" />
+  <img src="https://img.shields.io/badge/Submission-Submitted-brightgreen" />
   <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Pandas-Analytics-150458?logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-Completed-success" />
-  <img src="https://img.shields.io/badge/Submission-Submitted-brightgreen" />
 </p>
 
 ---
 
 ## 🎯 About the Project
 
-**RR GemHunters** is a completed cricket scouting and auction intelligence project developed for **SupeRR Selector Season 2**.
+**RR GemHunters** is a completed cricket analytics and player-selection project developed for **SupeRR Selector Season 2, Round 1**.
 
-The project aims to go beyond conventional cricket statistics and identify promising players whose contributions and potential may be overlooked by traditional performance-based selection methods.
+The objective is to identify players whose skills translate into decisive moments, not just overall match statistics.
 
-It combines cricket analytics, pressure-performance evaluation, statistical scoring, player comparison and scouting insights to support more informed player evaluation.
+Traditional season averages can hide how a player performs when the chase tightens, wickets fall or scoring pressure rises.
 
-Instead of relying on a single statistic, RR GemHunters evaluates players through multiple performance indicators, match situations, consistency and available evidence.
+RR GemHunters addresses this problem through ball-by-ball match context, measurable pressure-state definitions and role-specific performance indicators.
 
-## 💎 Signature Innovation: Hidden Gem Detection Engine
+Our approach evaluates:
 
-Traditional player rankings often prioritize visible statistics. RR GemHunters focuses on identifying players whose overall value may be underestimated by conventional rankings.
+- Batting performance under pressure
+- Bowling effectiveness under pressure
+- Scoring and finishing ability
+- Wicket-taking and run prevention
+- Match exposure and delivery sample size
+- Performance consistency
+- Player eligibility and ranking robustness
 
-### Oversight Gap
+## 💎 Our Core Idea: Discover Impact Under Pressure
 
-The Oversight Gap compares a player's conventional ranking with their context-adjusted ranking.
+**Others See Stats. We Discover Stars.**
 
-\[
-OG = R_{\text{conventional}} - R_{\text{adjusted}}
-\]
+The project focuses on understanding how players perform in difficult T20 chase situations.
 
-A positive Oversight Gap indicates that a player's position improves in the adjusted ranking.
+Rather than relying only on traditional season averages, we analyse the match situation before each delivery.
 
-This acts as a scouting signal. It is not proof of hidden talent or a guarantee of future performance.
+Three important contextual variables determine whether a delivery qualifies as a pressure delivery:
+
+1. Required run rate
+2. Balls remaining
+3. Wickets remaining
+
+These contextual variables are combined with player-level performance and evidence indicators to create separate batting and bowling evaluation frameworks.
 
 ## 🚀 Key Features
 
 | Feature | Description |
 |---|---|
-| 📊 Player Performance Intelligence | Analyse batting and bowling performance using relevant statistical indicators. |
-| 🏏 Pressure Performance Analysis | Evaluate player contributions in high-pressure T20 chase situations. |
-| 📈 Consistency & Reliability | Assess performance stability and account for limited sample sizes. |
-| 💎 Hidden Gem Detection | Identify players whose adjusted ranking improves relative to conventional ranking. |
-| 🎯 Role-Specific Evaluation | Evaluate batting and bowling contributions using separate scoring frameworks. |
-| ⚖️ Smart Player Comparison | Compare players using role-specific and context-aware metrics. |
-| 🔍 Eligibility & Evidence Checks | Consider pressure-delivery volume and match coverage when evaluating players. |
-| 📊 Interactive Scouting Dashboard | Present player insights, comparisons, rankings and scouting information. |
+| Ball-by-Ball Analysis | Analyse individual deliveries with match and innings context. |
+| Pressure-State Detection | Identify difficult second-innings chase situations using measurable conditions. |
+| Batter Performance Scoring | Evaluate scoring, consistency, boundary involvement, dismissal resistance and evidence. |
+| Bowler Performance Scoring | Evaluate wicket-taking, economy, dot-ball percentage, consistency and evidence. |
+| Player Eligibility Filtering | Apply minimum pressure-delivery and match requirements. |
+| Ranking Robustness | Compare player rankings under primary and strict eligibility thresholds. |
+| Player Selection | Build a selected group of 10 batters and 10 bowlers. |
+| Evidence-Based Scouting | Consider match exposure, delivery samples and consistency instead of relying on raw averages alone. |
 
-## 🧮 Statistical & Analytical Framework
+## 🏗️ Analytical Workflow
 
-The project uses a structured analytical workflow involving:
-
-- Data cleaning and validation
-- Exploratory data analysis
-- Feature engineering
-- Descriptive statistics
-- Percentile normalization
-- Role-specific weighted scoring
-- Pressure-performance evaluation
-- Consistency and evidence analysis
-- Eligibility filtering
-- Ranking comparison and sensitivity analysis
-
-### Pressure Batter Scoring Framework
-
-The batter evaluation framework uses the following weights:
-
-| Evaluation Dimension | Weight |
-|---|---:|
-| Scoring Ability | 30% |
-| Consistency | 25% |
-| Boundary Contribution | 15% |
-| Dismissal Resistance | 15% |
-| Evidence | 15% |
-| **Total** | **100%** |
-
-### Pressure Bowler Scoring Framework
-
-The bowler evaluation framework uses:
-
-| Evaluation Dimension | Weight |
-|---|---:|
-| Wickets per Match | 30% |
-| Economy | 25% |
-| Dot-Ball Percentage | 20% |
-| Consistency | 15% |
-| Evidence | 10% |
-| **Total** | **100%** |
-
-> **Scoring note:** These are relative, percentile-normalized evaluation scores. They support comparisons among eligible players in the analysed dataset. They are not probabilities of winning, absolute measures of player quality or proof of future performance.
-
-## 📊 Dataset & Analysis Scope
-
-The current analysis covers:
-
-- **139 competitions:** 134 T20I and 5 IPL competitions
-- **853 matches**
-- **837 matches** with ball-by-ball data
-- **16 abandoned matches** excluded
-- **200,999 source ball-by-ball rows**
-- **194,014 cleaned delivery rows**
-
-### Pressure Situation Definition
-
-The current pressure-state analysis focuses on second-innings T20 chases.
-
-A delivery is classified as a pressure situation when all three conditions hold:
-
-- Required run rate is at least 10 runs per over.
-- 30 or fewer balls remain.
-- 5 or fewer wickets remain.
-
-The analysis uses a standard 120-ball chase assumption. Matches with revised DLS targets are excluded from this pressure-state calculation.
-
-> **Important limitation:** The pressure analysis focuses on qualifying second-innings chase situations. It does not represent every possible high-pressure situation in cricket.
-
-## 🏏 Selected Player Shortlist
-
-As part of the SupeRR Selector Season 2 competition submission, RR GemHunters shortlisted 20 players across batting and bowling categories.
-
-### 🔥 Selected 10 Batters
-
-| No. | Player |
-|---:|---|
-| 1 | David Miller |
-| 2 | Rahul Tewatia |
-| 3 | Glenn Maxwell |
-| 4 | Rinku Singh |
-| 5 | Matthew Wade |
-| 6 | Rashid Khan |
-| 7 | Cameron Green |
-| 8 | Harry Brook |
-| 9 | Dinesh Karthik |
-| 10 | Tim David |
-
-### 🎯 Selected 10 Bowlers
-
-| No. | Player |
-|---:|---|
-| 1 | Mayank Yadav |
-| 2 | Mark Adair |
-| 3 | Glenn Maxwell |
-| 4 | Jasprit Bumrah |
-| 5 | Nasum Ahmed |
-| 6 | Shaheen Afridi |
-| 7 | Umesh Yadav |
-| 8 | Saim Ayub |
-| 9 | Gerald Coetzee |
-| 10 | Joshua Little |
-
-**Selection Note:** These are the players selected for the competition submission. Their inclusion represents the submitted scouting shortlist, not a claim that every player is an uncapped domestic prospect or a confirmed Rajasthan Royals recruitment recommendation.
-
-## 🏗️ Project Architecture
+The project follows a reproducible workflow built around ball-by-ball data and match context.
 
 ```mermaid
 flowchart TD
-    A["Competition Ball-by-Ball Data"] --> B["Data Ingestion"]
-    B --> C["Data Validation & Cleaning"]
-    C --> D["Match Eligibility Filtering"]
-    D --> E["Delivery Context Engineering"]
-    E --> F["Pressure-State Identification"]
-    F --> G["Player-Level Feature Engineering"]
-    G --> H["Batter Performance Scoring"]
-    G --> I["Bowler Performance Scoring"]
-    H --> J["Player Ranking"]
-    I --> J
-    J --> K["Eligibility & Evidence Review"]
-    K --> L["Scouting Insights"]
-    L --> M["Dashboard & Reports"]
+    A["Collect Data"] --> B["Clean Data"]
+    B --> C["Enrich Match Context"]
+    C --> D["Filter Pressure Deliveries"]
+    D --> E["Apply Eligibility Thresholds"]
+    E --> F["Engineer Player Features"]
+    F --> G["Calculate Role-Specific Scores"]
+    G --> H["Generate Player Rankings"]
+    H --> I["Validate Ranking Robustness"]
+    I --> J["Select Players"]
+    J --> K["Scouting Insights"]
 ```
 
-## 🛠️ Tech Stack
+### Workflow Steps
 
-| Category | Technologies |
+1. **Collect:** Ball-by-ball records, matches, competitions, teams and player mappings.
+2. **Clean:** Standardise deliveries, innings, extras, wickets and player identities.
+3. **Enrich:** Attach match context and calculate pre-delivery chase state.
+4. **Filter:** Identify pressure deliveries and apply minimum evidence thresholds.
+5. **Score:** Calculate role-specific components, composite scores and ranks.
+
+## 📊 Dataset & Data Audit
+
+The project analysis covers:
+
+| Dataset Metric | Value |
+|---|---:|
+| Total Competitions | 139 |
+| T20I Competitions | 134 |
+| IPL Competitions | 5 |
+| Total Matches | 853 |
+| Matches with Ball-by-Ball Coverage | 837 |
+| Cleaned Delivery Records | 194,014 |
+| Pressure-State Delivery Records | 88,035 |
+| Eligible Second Innings | 770 |
+
+The dataset was processed to create delivery-level match context and identify qualifying pressure situations.
+
+## ⚡ Pressure-State Definition
+
+The current operational definition focuses on difficult second-innings T20 chase situations.
+
+A delivery is classified as a pressure delivery when **all three conditions** are true:
+
+| Pressure Indicator | Condition |
+|---|---|
+| Required Run Rate | ≥ 10 runs per over |
+| Balls Remaining | ≤ 30 legal balls |
+| Wickets Remaining | ≤ 5 wickets |
+
+All conditions are joined using the logical **AND** operator.
+
+```python
+is_pressure = (
+    (required_run_rate >= 10) &
+    (balls_remaining <= 30) &
+    (wickets_remaining <= 5)
+)
+```
+
+A delivery that fails any one of these conditions is outside the pressure filter.
+
+### Pressure Dataset
+
+- 88,035 pressure delivery states
+- 770 eligible second innings
+
+The analysis focuses on second-innings chases and uses a standard 120-ball assumption. Revised-target/DLS cases are excluded.
+
+## 🏏 Batter Evaluation Framework
+
+The batting evaluation framework combines five weighted dimensions to measure output, repeatability and evidence.
+
+| Evaluation Dimension | Weight | Measurement |
+|---|---:|---|
+| Pressure Scoring | 30% | Overall pressure strike rate |
+| Consistency | 25% | Median match strike rate and lower match-to-match variation |
+| Boundary Involvement | 15% | Share of matches with boundary involvement |
+| Dismissal Resistance | 15% | Lower dismissals per 100 balls |
+| Evidence Strength | 15% | Pressure matches and pressure deliveries |
+| **Total** | **100%** | |
+
+Scores are percentile-based within the primary-eligible batter population.
+
+## 🎯 Bowler Evaluation Framework
+
+The bowling evaluation framework rewards wicket impact, control and repeatability.
+
+| Evaluation Dimension | Weight | Measurement |
+|---|---:|---|
+| Wicket-Taking | 30% | Average wickets per pressure match |
+| Economy Control | 25% | Lower pressure economy |
+| Dot-Ball Pressure | 20% | Higher pressure dot-ball percentage |
+| Consistency | 15% | Lower match-to-match economy variation |
+| Evidence Strength | 10% | Pressure matches and pressure deliveries |
+| **Total** | **100%** | |
+
+A quality review is flagged when more than 5% of a bowler's pressure deliveries carry quality flags.
+
+## 🔍 Eligibility & Ranking Robustness
+
+Minimum evidence requirements reduce over-reliance on very small samples.
+
+| Eligibility Tier | Pressure Deliveries | Matches |
+|---|---:|---:|
+| Primary | ≥ 20 | ≥ 5 |
+| Relaxed | ≥ 10 | ≥ 3 |
+| Strict | ≥ 30 | ≥ 8 |
+
+### Batter Eligibility
+
+| Metric | Result |
+|---|---:|
+| Primary Eligible | 96 |
+| Strict Eligible | 46 |
+| Primary Top 10 Retained in Strict Top 10 | 8 of 10 |
+
+### Bowler Eligibility
+
+| Metric | Result |
+|---|---:|
+| Primary Eligible | 88 |
+| Strict Eligible | 52 |
+| Primary Top 10 Retained in Strict Top 10 | 4 of 10 |
+
+Sensitivity scores are recalculated within the strict group.
+
+Because percentile reference populations differ, ranking membership is compared rather than raw score values.
+
+## 🔥 Selected Batter Group
+
+The submitted batting group combines finishers, middle-order power and flexible all-round options.
+
+| No. | Selected Batter | Player Profile |
+|---:|---|---|
+| 1 | **David Miller** | Left-handed finisher; experience in high-pressure closing roles. |
+| 2 | **Rahul Tewatia** | Lower-order hitter known for late-innings acceleration. |
+| 3 | **Glenn Maxwell** | Explosive middle-order batter with off-spin utility. |
+| 4 | **Rinku Singh** | Finisher with a strong record of late-innings impact. |
+| 5 | **Matthew Wade** | Left-handed batter with experience in aggressive T20 roles. |
+| 6 | **Rashid Khan** | Power-hitting lower-order all-round option. |
+| 7 | **Cameron Green** | Batting depth and pace-bowling versatility. |
+| 8 | **Harry Brook** | Middle-order stroke-maker with multi-format experience. |
+| 9 | **Dinesh Karthik** | Specialist finisher and experienced T20 batter. |
+| 10 | **Tim David** | Power hitter suited to high-impact finishing roles. |
+
+## 🎯 Selected Bowling Group
+
+The submitted bowling group combines pace, spin, variation and all-round match-up options.
+
+| No. | Selected Bowler | Player Profile |
+|---:|---|---|
+| 1 | **Mayank Yadav** | Express pace option; can challenge batters with speed. |
+| 2 | **Kuldeep Yadav** | Left-arm wrist spin; wicket-taking variation in middle overs. |
+| 3 | **Glenn Maxwell** | Off-spin option and matchup flexibility. |
+| 4 | **Yuzvendra Chahal** | Attacking leg-spin and middle-over wicket threat. |
+| 5 | **Shardul Thakur** | Seam-bowling option with lower-order batting contribution. |
+| 6 | **Jasprit Bumrah** | High-skill pace bowler with yorkers and varied release points. |
+| 7 | **Gerald Coetzee** | Aggressive fast bowler with pace and bounce. |
+| 8 | **Jamie Overton** | Seam-bowling all-round option with pace and batting depth. |
+| 9 | **Adil Rashid** | Leg-spin variation and wicket-taking threat. |
+| 10 | **Rashid Khan** | Fast leg-spin, control and lower-order batting value. |
+
+**Multi-skill options:** Glenn Maxwell and Rashid Khan appear in both groups because of their contributions across batting and bowling.
+
+## 🧰 Technology & Tools
+
+The project uses a Python-based data analysis workflow.
+
+| Category | Tools |
 |---|---|
 | Programming Language | Python |
-| Data Analysis | Pandas, NumPy, SciPy |
-| Visualization | Matplotlib, Seaborn, Plotly |
-| Machine Learning | Scikit-learn |
+| Data Manipulation | Pandas, NumPy |
+| Statistical Analysis | SciPy |
+| Machine Learning / Analytics | Scikit-learn |
+| Data Visualization | Matplotlib, Seaborn, Plotly |
 | Dashboard | Streamlit |
 | Development Environment | VS Code, Jupyter Notebook |
-| Version Control | Git, GitHub |
+| Version Control | Git and GitHub |
 
 ## 📁 Project Structure
 
@@ -201,16 +261,13 @@ RR-GemHunters/
 │
 ├── dashboard/
 │
+├── data/
+│
 ├── notebooks/
 │
 ├── reports/
 │
 ├── src/
-│   ├── data/
-│   ├── features/
-│   ├── analytics/
-│   ├── models/
-│   └── evaluation/
 │
 ├── tests/
 │
@@ -219,36 +276,64 @@ RR-GemHunters/
 └── requirements.txt
 ```
 
+## 📌 What the Analysis Can and Cannot Claim
+
+### What It Does
+
+- Measures defined second-innings chase pressure.
+- Evaluates role-specific batting and bowling indicators.
+- Compares eligible players using percentile-based composite scores.
+- Uses match and delivery evidence to assess eligibility.
+- Checks ranking robustness using stricter evidence requirements.
+
+### What It Does Not Claim
+
+- It is not a calibrated win-probability model.
+- It does not cover every possible pressure scenario.
+- It does not establish auction registration or player availability.
+- It does not prove that a player will perform similarly in future matches.
+
+### Important Limitations
+
+1. **Second-Innings Chase Focus:** First-innings defending pressure is outside the current operational filter.
+2. **120-Ball Assumption:** A standard legal-ball limit is used; revised-target/DLS cases are excluded.
+3. **Relative Scores:** Percentile scores describe position within the eligible player pool, not an absolute probability of success.
+4. **Sample Uncertainty:** Primary and strict eligibility results should be interpreted alongside matches and pressure deliveries.
+5. **Competition Effects:** No explicit IPL-versus-T20I adjustment or empirical-Bayes shrinkage is implemented in the current scoring scripts.
+
 ## 📅 Project Completion Status
 
-<badge color="success">Completed and Submitted</badge>
+<badge color="success">Completed</badge> <badge color="success">Round 1 Submitted</badge>
 
 - [x] Project initialization
-- [x] Python virtual environment setup
-- [x] Core dependency installation
-- [x] Competition dataset understanding
-- [x] Data cleaning and eligibility filtering
+- [x] Competition dataset collection and understanding
+- [x] Data cleaning and validation
+- [x] Match context engineering
 - [x] Pressure-state identification
-- [x] Batter and bowler feature engineering
-- [x] Role-specific pressure scoring
-- [x] Initial player shortlist
-- [x] Final ranking validation
-- [x] Interactive scouting dashboard
-- [x] Final scouting report and presentation
-- [x] Model validation and sensitivity analysis
+- [x] Batter feature engineering
+- [x] Bowler feature engineering
+- [x] Batter scoring framework
+- [x] Bowler scoring framework
+- [x] Eligibility and evidence thresholds
+- [x] Ranking robustness analysis
+- [x] Selected group of 10 batters
+- [x] Selected group of 10 bowlers
+- [x] Round 1 presentation
+- [x] Round 1 submission
 
-**Project Status:** Completed
-
-**Competition Status:** Submission completed.
+**Project:** RR GemHunters  
+**Competition:** SupeRR Selector Season 2  
+**Round:** 1  
+**Status:** Completed and Submitted
 
 ## 🔐 Data Privacy & Responsible Use
 
 - Competition data is handled according to the official challenge rules.
 - Private or restricted competition data is not intended for publication in this repository.
 - Public datasets and external sources are used only where permitted.
-- Player recommendations are supported by statistical evidence.
+- Player evaluations are based on the available statistical evidence.
 - Sample-size constraints and data limitations are considered during evaluation.
-- Relative scoring should not be interpreted as a guarantee of future performance.
+- Relative scores should not be interpreted as guarantees of future performance.
 
 ## 👨‍💻 Developer
 
@@ -263,5 +348,5 @@ B.Tech | Computer Science & Engineering
 <p align="center">
   <strong>Every Hidden Gem Deserves a Chance to Shine. 💎</strong>
   <br />
-  <sub>RR GemHunters | Cricket Talent Discovery & Auction Intelligence</sub>
+  <sub>RR GemHunters | SupeRR Selector Season 2 | Round 1</sub>
 </p>
