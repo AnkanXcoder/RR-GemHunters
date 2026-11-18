@@ -5,7 +5,7 @@
   <p align="center">
     <strong>Cricket Talent Discovery & Auction Intelligence</strong>
     <br />
-    An analytical scouting platform designed to identify undervalued, young and high-potential cricket talent.
+    A data-driven scouting platform designed to identify undervalued, high-potential cricket talent.
   </p>
 </p>
 
@@ -14,24 +14,25 @@
   <img src="https://img.shields.io/badge/Pandas-Analytics-150458?logo=pandas&logoColor=white" />
   <img src="https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?logo=scikitlearn&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-In%20Development-orange" />
+  <img src="https://img.shields.io/badge/Status-Completed-success" />
+  <img src="https://img.shields.io/badge/Submission-Submitted-brightgreen" />
 </p>
 
 ---
 
 ## 🎯 About the Project
 
-**RR GemHunters** is a data-driven cricket scouting and auction intelligence project developed for **SupeRR Selector Season 2**.
+**RR GemHunters** is a completed cricket scouting and auction intelligence project developed for **SupeRR Selector Season 2**.
 
-The goal is to go beyond conventional cricket statistics and identify promising players who may be overlooked by traditional performance-based selection methods.
+The project aims to go beyond conventional cricket statistics and identify promising players whose contributions and potential may be overlooked by traditional performance-based selection methods.
 
-The project explores player performance through batting and bowling indicators, pressure situations, consistency, sample size and match context to produce evidence-based scouting insights.
+It combines cricket analytics, pressure-performance evaluation, statistical scoring, player comparison and scouting insights to support more informed player evaluation.
 
-Rather than relying on a single statistic, RR GemHunters uses role-specific evaluation and comparative scoring to understand player contributions.
+Instead of relying on a single statistic, RR GemHunters evaluates players through multiple performance indicators, match situations, consistency and available evidence.
 
 ## 💎 Signature Innovation: Hidden Gem Detection Engine
 
-Traditional player rankings often prioritize visible statistics. RR GemHunters aims to identify players whose overall value may be underestimated by conventional rankings.
+Traditional player rankings often prioritize visible statistics. RR GemHunters focuses on identifying players whose overall value may be underestimated by conventional rankings.
 
 ### Oversight Gap
 
@@ -43,7 +44,7 @@ OG = R_{\text{conventional}} - R_{\text{adjusted}}
 
 A positive Oversight Gap indicates that a player's position improves in the adjusted ranking.
 
-This is a scouting signal, not proof of hidden talent. Each candidate should be reviewed using performance indicators, role, sample size and data reliability.
+This acts as a scouting signal. It is not proof of hidden talent or a guarantee of future performance.
 
 ## 🚀 Key Features
 
@@ -56,9 +57,7 @@ This is a scouting signal, not proof of hidden talent. Each candidate should be 
 | 🎯 Role-Specific Evaluation | Evaluate batting and bowling contributions using separate scoring frameworks. |
 | ⚖️ Smart Player Comparison | Compare players using role-specific and context-aware metrics. |
 | 🔍 Eligibility & Evidence Checks | Consider pressure-delivery volume and match coverage when evaluating players. |
-| 📊 Interactive Scouting Dashboard | Present player insights, comparisons, rankings and recommendations. |
-
-*Additional capabilities such as age-adjusted potential, phase-level analysis, archetype classification and squad-fit analysis are planned extensions and will be implemented only when the available data supports them.*
+| 📊 Interactive Scouting Dashboard | Present player insights, comparisons, rankings and scouting information. |
 
 ## 🧮 Statistical & Analytical Framework
 
@@ -77,7 +76,7 @@ The project uses a structured analytical workflow involving:
 
 ### Pressure Batter Scoring Framework
 
-The batter evaluation framework uses the following initial weights:
+The batter evaluation framework uses the following weights:
 
 | Evaluation Dimension | Weight |
 |---|---:|
@@ -101,18 +100,18 @@ The bowler evaluation framework uses:
 | Evidence | 10% |
 | **Total** | **100%** |
 
-> **Scoring note:** These are relative, percentile-normalized evaluation scores. They are useful for comparing eligible players within the analysed dataset. They are not probabilities of winning, absolute measures of player quality or proof of future performance.
+> **Scoring note:** These are relative, percentile-normalized evaluation scores. They support comparisons among eligible players in the analysed dataset. They are not probabilities of winning, absolute measures of player quality or proof of future performance.
 
 ## 📊 Dataset & Analysis Scope
 
 The current analysis covers:
 
-- 139 competitions: 134 T20I and 5 IPL competitions
-- 853 matches
-- 837 matches with ball-by-ball data
-- 16 abandoned matches excluded
-- 200,999 source ball-by-ball rows
-- 194,014 cleaned delivery rows
+- **139 competitions:** 134 T20I and 5 IPL competitions
+- **853 matches**
+- **837 matches** with ball-by-ball data
+- **16 abandoned matches** excluded
+- **200,999 source ball-by-ball rows**
+- **194,014 cleaned delivery rows**
 
 ### Pressure Situation Definition
 
@@ -220,9 +219,9 @@ RR-GemHunters/
 └── requirements.txt
 ```
 
-*The structure is representative of the project organization and will evolve as development continues.*
+## 📅 Project Completion Status
 
-## 📅 Development Roadmap
+<badge color="success">Completed and Submitted</badge>
 
 - [x] Project initialization
 - [x] Python virtual environment setup
@@ -233,10 +232,14 @@ RR-GemHunters/
 - [x] Batter and bowler feature engineering
 - [x] Role-specific pressure scoring
 - [x] Initial player shortlist
-- [ ] Final ranking validation
-- [ ] Interactive scouting dashboard
-- [ ] Final scouting report and presentation
-- [ ] Further model validation and sensitivity analysis
+- [x] Final ranking validation
+- [x] Interactive scouting dashboard
+- [x] Final scouting report and presentation
+- [x] Model validation and sensitivity analysis
+
+**Project Status:** Completed
+
+**Competition Status:** Submission completed.
 
 ## 🔐 Data Privacy & Responsible Use
 
