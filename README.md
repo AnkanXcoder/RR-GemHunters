@@ -1,11 +1,11 @@
-# 💎 RR GemHunters 💎
+# 💎 RR GemHunters
 
 <p align="center">
   <h3 align="center">Others See Stats. We Discover Stars.</h3>
   <p align="center">
     <strong>Cricket Talent Discovery & Auction Intelligence</strong>
     <br />
-    An analytical scouting platform designed to identify undervalued, young and high-potential domestic cricket talent.
+    An analytical scouting platform designed to identify undervalued, young and high-potential cricket talent.
   </p>
 </p>
 
@@ -23,9 +23,11 @@
 
 **RR GemHunters** is a data-driven cricket scouting and auction intelligence project developed for **SupeRR Selector Season 2**.
 
-The goal is to go beyond conventional cricket statistics and identify promising young, uncapped domestic players who may be overlooked by traditional performance-based selection methods.
+The goal is to go beyond conventional cricket statistics and identify promising players who may be overlooked by traditional performance-based selection methods.
 
-The platform aims to evaluate players through performance, age, consistency, role-specific contribution and available match context to generate evidence-based scouting recommendations.
+The project explores player performance through batting and bowling indicators, pressure situations, consistency, sample size and match context to produce evidence-based scouting insights.
+
+Rather than relying on a single statistic, RR GemHunters uses role-specific evaluation and comparative scoring to understand player contributions.
 
 ## 💎 Signature Innovation: Hidden Gem Detection Engine
 
@@ -35,79 +37,150 @@ Traditional player rankings often prioritize visible statistics. RR GemHunters a
 
 The Oversight Gap compares a player's conventional ranking with their context-adjusted ranking.
 
-$$
+\[
 OG = R_{\text{conventional}} - R_{\text{adjusted}}
-$$
+\]
 
 A positive Oversight Gap indicates that a player's position improves in the adjusted ranking.
 
-This is a scouting signal, not proof of hidden talent. Each candidate must be reviewed using performance indicators, role, sample size and data reliability.
+This is a scouting signal, not proof of hidden talent. Each candidate should be reviewed using performance indicators, role, sample size and data reliability.
 
 ## 🚀 Key Features
 
 | Feature | Description |
 |---|---|
 | 📊 Player Performance Intelligence | Analyse batting and bowling performance using relevant statistical indicators. |
-| 🏏 T20 Phase Intelligence | Evaluate powerplay, middle-over and death-over contributions when phase-level data is available. |
-| 🎯 Age-Adjusted Potential | Compare player performance with age and experience context. |
-| 📈 Consistency & Reliability | Evaluate performance stability and account for limited sample sizes. |
+| 🏏 Pressure Performance Analysis | Evaluate player contributions in high-pressure T20 chase situations. |
+| 📈 Consistency & Reliability | Assess performance stability and account for limited sample sizes. |
 | 💎 Hidden Gem Detection | Identify players whose adjusted ranking improves relative to conventional ranking. |
-| 🧠 Player Archetype Classification | Explore player roles such as aggressors, finishers, stabilizers and specialist bowlers. |
+| 🎯 Role-Specific Evaluation | Evaluate batting and bowling contributions using separate scoring frameworks. |
 | ⚖️ Smart Player Comparison | Compare players using role-specific and context-aware metrics. |
-| 👑 Rajasthan Royals Strategic Fit | Explore potential squad relevance using verified team requirements and available evidence. |
-| 🔍 Model Confidence & Validation | Assess ranking stability, sample-size limitations and sensitivity to scoring weights. |
+| 🔍 Eligibility & Evidence Checks | Consider pressure-delivery volume and match coverage when evaluating players. |
 | 📊 Interactive Scouting Dashboard | Present player insights, comparisons, rankings and recommendations. |
 
-*Advanced features will be implemented only when the available data supports them.*
+*Additional capabilities such as age-adjusted potential, phase-level analysis, archetype classification and squad-fit analysis are planned extensions and will be implemented only when the available data supports them.*
 
 ## 🧮 Statistical & Analytical Framework
 
-The project will explore the following methods:
+The project uses a structured analytical workflow involving:
 
-- Descriptive statistics and exploratory data analysis
-- Data cleaning and feature engineering
-- Percentile and statistical normalization
-- Z-score analysis
-- Weighted scoring and role-based ranking
-- Correlation analysis
-- Bayesian shrinkage for limited-sample performance
-- Consistency and reliability analysis
-- K-Means clustering for exploratory player archetypes
-- Sensitivity analysis and ranking validation
+- Data cleaning and validation
+- Exploratory data analysis
+- Feature engineering
+- Descriptive statistics
+- Percentile normalization
+- Role-specific weighted scoring
+- Pressure-performance evaluation
+- Consistency and evidence analysis
+- Eligibility filtering
+- Ranking comparison and sensitivity analysis
 
-### Initial Scoring Framework
+### Pressure Batter Scoring Framework
 
-| Evaluation Dimension | Initial Weight |
+The batter evaluation framework uses the following initial weights:
+
+| Evaluation Dimension | Weight |
 |---|---:|
-| Context-Adjusted Performance | 25% |
-| Phase-Specific Impact | 20% |
-| Age-Adjusted Potential | 15% |
-| Consistency & Reliability | 15% |
-| Role-Specific Tactical Value | 15% |
-| Development Indicators | 10% |
+| Scoring Ability | 30% |
+| Consistency | 25% |
+| Boundary Contribution | 15% |
+| Dismissal Resistance | 15% |
+| Evidence | 15% |
 | **Total** | **100%** |
 
-> **Note:** These are initial experimental weights. They will be reviewed and validated against the available dataset. Model confidence will be reported separately.
+### Pressure Bowler Scoring Framework
+
+The bowler evaluation framework uses:
+
+| Evaluation Dimension | Weight |
+|---|---:|
+| Wickets per Match | 30% |
+| Economy | 25% |
+| Dot-Ball Percentage | 20% |
+| Consistency | 15% |
+| Evidence | 10% |
+| **Total** | **100%** |
+
+> **Scoring note:** These are relative, percentile-normalized evaluation scores. They are useful for comparing eligible players within the analysed dataset. They are not probabilities of winning, absolute measures of player quality or proof of future performance.
+
+## 📊 Dataset & Analysis Scope
+
+The current analysis covers:
+
+- 139 competitions: 134 T20I and 5 IPL competitions
+- 853 matches
+- 837 matches with ball-by-ball data
+- 16 abandoned matches excluded
+- 200,999 source ball-by-ball rows
+- 194,014 cleaned delivery rows
+
+### Pressure Situation Definition
+
+The current pressure-state analysis focuses on second-innings T20 chases.
+
+A delivery is classified as a pressure situation when all three conditions hold:
+
+- Required run rate is at least 10 runs per over.
+- 30 or fewer balls remain.
+- 5 or fewer wickets remain.
+
+The analysis uses a standard 120-ball chase assumption. Matches with revised DLS targets are excluded from this pressure-state calculation.
+
+> **Important limitation:** The pressure analysis focuses on qualifying second-innings chase situations. It does not represent every possible high-pressure situation in cricket.
+
+## 🏏 Selected Player Shortlist
+
+As part of the SupeRR Selector Season 2 competition submission, RR GemHunters shortlisted 20 players across batting and bowling categories.
+
+### 🔥 Selected 10 Batters
+
+| No. | Player |
+|---:|---|
+| 1 | David Miller |
+| 2 | Rahul Tewatia |
+| 3 | Glenn Maxwell |
+| 4 | Rinku Singh |
+| 5 | Matthew Wade |
+| 6 | Rashid Khan |
+| 7 | Cameron Green |
+| 8 | Harry Brook |
+| 9 | Dinesh Karthik |
+| 10 | Tim David |
+
+### 🎯 Selected 10 Bowlers
+
+| No. | Player |
+|---:|---|
+| 1 | Mayank Yadav |
+| 2 | Mark Adair |
+| 3 | Glenn Maxwell |
+| 4 | Jasprit Bumrah |
+| 5 | Nasum Ahmed |
+| 6 | Shaheen Afridi |
+| 7 | Umesh Yadav |
+| 8 | Saim Ayub |
+| 9 | Gerald Coetzee |
+| 10 | Joshua Little |
+
+**Selection Note:** These are the players selected for the competition submission. Their inclusion represents the submitted scouting shortlist, not a claim that every player is an uncapped domestic prospect or a confirmed Rajasthan Royals recruitment recommendation.
 
 ## 🏗️ Project Architecture
 
 ```mermaid
 flowchart TD
-    A["Official Competition Data Pack"] --> B["Data Ingestion"]
+    A["Competition Ball-by-Ball Data"] --> B["Data Ingestion"]
     B --> C["Data Validation & Cleaning"]
-    C --> D["Eligibility Filtering"]
-    D --> E["Exploratory Data Analysis"]
-    E --> F["Feature Engineering"]
-    F --> G["Performance Intelligence"]
-    F --> H["Age & Consistency Analysis"]
-    F --> I["Role & Phase Analysis"]
-    G --> J["Hidden Gem Detection Engine"]
-    H --> J
+    C --> D["Match Eligibility Filtering"]
+    D --> E["Delivery Context Engineering"]
+    E --> F["Pressure-State Identification"]
+    F --> G["Player-Level Feature Engineering"]
+    G --> H["Batter Performance Scoring"]
+    G --> I["Bowler Performance Scoring"]
+    H --> J["Player Ranking"]
     I --> J
-    J --> K["Scoring & Player Ranking"]
-    K --> L["Model Validation"]
-    L --> M["Interactive Scouting Dashboard"]
-    M --> N["Top 10 Player Recommendations"]
+    J --> K["Eligibility & Evidence Review"]
+    K --> L["Scouting Insights"]
+    L --> M["Dashboard & Reports"]
 ```
 
 ## 🛠️ Tech Stack
@@ -127,16 +200,11 @@ flowchart TD
 ```text
 RR-GemHunters/
 │
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── external/
+├── dashboard/
 │
 ├── notebooks/
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_exploratory_analysis.ipynb
-│   └── 04_feature_engineering.ipynb
+│
+├── reports/
 │
 ├── src/
 │   ├── data/
@@ -145,44 +213,39 @@ RR-GemHunters/
 │   ├── models/
 │   └── evaluation/
 │
-├── dashboard/
-│   └── app.py
-│
-├── reports/
-│
 ├── tests/
 │
 ├── .gitignore
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
-*The structure represents the planned architecture and will evolve during development.*
+*The structure is representative of the project organization and will evolve as development continues.*
 
 ## 📅 Development Roadmap
 
 - [x] Project initialization
 - [x] Python virtual environment setup
 - [x] Core dependency installation
-- [x] Jupyter kernel configuration
-- [ ] GitHub repository integration
-- [ ] Competition dataset understanding
-- [ ] Data cleaning and eligibility filtering
-- [ ] Exploratory data analysis
-- [ ] Feature engineering
-- [ ] Hidden Gem Detection Engine
-- [ ] Player ranking and validation
+- [x] Competition dataset understanding
+- [x] Data cleaning and eligibility filtering
+- [x] Pressure-state identification
+- [x] Batter and bowler feature engineering
+- [x] Role-specific pressure scoring
+- [x] Initial player shortlist
+- [ ] Final ranking validation
 - [ ] Interactive scouting dashboard
-- [ ] Final Top 10 recommendations
 - [ ] Final scouting report and presentation
+- [ ] Further model validation and sensitivity analysis
 
 ## 🔐 Data Privacy & Responsible Use
 
-- Competition data will be handled according to the official challenge rules.
-- Private or restricted competition data will not be published in this repository.
-- Public datasets and external sources will be used only where permitted.
-- Player recommendations will be supported by transparent statistical evidence.
-- Model limitations and sample-size constraints will be clearly communicated.
+- Competition data is handled according to the official challenge rules.
+- Private or restricted competition data is not intended for publication in this repository.
+- Public datasets and external sources are used only where permitted.
+- Player recommendations are supported by statistical evidence.
+- Sample-size constraints and data limitations are considered during evaluation.
+- Relative scoring should not be interpreted as a guarantee of future performance.
 
 ## 👨‍💻 Developer
 
