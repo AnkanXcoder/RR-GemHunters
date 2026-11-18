@@ -20,6 +20,8 @@ data/
 *.xlsx
 *.xls
 *.parquet
+.env
+*.log
 
 # Model artifacts
 models/
